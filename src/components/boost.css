@@ -1,0 +1,27 @@
+.Boost {
+    min-height: 200px;
+    background-color: #3a3053;
+    padding: 20px;
+}
+
+.Boost h4 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.Boost .Get{
+    transition: .3s;
+    border: none;
+    padding: 10px 30px;
+    background-color: #2fd1d3;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 50px auto 0;
+}
+.Boost .Get:hover {
+    font-weight: 900;
+}

@@ -1,42 +1,28 @@
-import "./App.css";
-import Appnavbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import Products from "./components/Products";
-import Cart from "./components/Cart";
-import Counter from "./features/counter/Counter";
+import Navbar from "./components/Navbar";
+import Landing from "./components/Landing";
+import Statistics from "./components/Statistics";
+import Boost from "./components/Boost";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Appnavbar /> <h1>This the Home page</h1>
-            </>
-          }
-        />
-        <Route
-          path="Products"
-          element={
-            <>
-              <Appnavbar />
-              <Products />
-            </>
-          }
-        />
-        <Route
-          path="Cart"
-          element={
-            <>
-              <Appnavbar />
-              <Cart />
+              <Navbar />
+              <Landing />
+              <Statistics />
+              <Boost />
+              <Footer />
             </>
           }
         />
       </Routes>
-    </div>
+    </>
   );
 }
 
